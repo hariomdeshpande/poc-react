@@ -1,0 +1,35 @@
+
+.footer {
+    color: #fff;
+    background-color: #F58923;
+    padding: 40px 40px 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 576) {
+    .footer {
+      padding: 20px;
+    }
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer .social-icons {
+    gap: 20px;
+  }
+  
+  .footer .social-icons a {
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
+  
+  .footer .social-icons a:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }

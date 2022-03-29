@@ -1,0 +1,176 @@
+.bibilography {
+    padding: 20px 0 20px 20px;
+    height: 100vh;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .bibilography {
+      height: auto;
+    }
+  }
+  
+  .bibilography__content {
+    padding: 0 20px;
+  }
+  
+  .bibilography__content h3 {
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 30px 0;
+    color: #540D10;
+  }
+  
+  .bibilography__carousel {
+    position: relative;
+  }
+  
+  .bibilography__carousel .item {
+    position: relative;
+  }
+  
+  .bibilography__carousel .item__image {
+    -webkit-box-shadow: 0 0 0 rgba(26, 26, 26, 0);
+            box-shadow: 0 0 0 rgba(26, 26, 26, 0);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bibilography__carousel .item__image img {
+    max-height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .bibilography__carousel .item p {
+    margin-top: 30px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bibilography__carousel .item button.play-btn {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    background-color: #F58923;
+    border-radius: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .bibilography__carousel .item button.play-btn::before {
+    content: "";
+    height: 68px;
+    width: 68px;
+    border: 2px solid #F58923;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.2;
+    -webkit-animation: blink 1s linear infinite;
+            animation: blink 1s linear infinite;
+  }
+  
+  .bibilography__carousel .item button.play-btn::after {
+    content: "";
+    height: 58px;
+    width: 58px;
+    border: 4px solid #F58923;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+    -webkit-animation: blink 1s 1s linear infinite;
+            animation: blink 1s 1s linear infinite;
+  }
+  
+  @-webkit-keyframes blink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: initial;
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: initial;
+    }
+  }
+  
+  .bibilography__carousel .item button.play-btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .bibilography__carousel .item:hover .item__image {
+    -webkit-box-shadow: 0 10px 10px rgba(26, 26, 26, 0.4);
+            box-shadow: 0 10px 10px rgba(26, 26, 26, 0.4);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  
+  .bibilography__carousel .item:hover .play-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .bibilography__carousel .item:hover p {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  
+  .bibilography__carousel .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0 20px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .bibilography__carousel .owl-nav {
+      position: relative;
+      top: unset;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 20px;
+    }
+  }
+  
+  .bibilography__carousel .owl-nav button {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #707070 !important;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .bibilography__carousel .owl-nav button:hover {
+    background-color: #540D10;
+  }
+  
+  .bibilography__carousel .owl-nav button:hover svg text {
+    fill: #fff;
+  }
